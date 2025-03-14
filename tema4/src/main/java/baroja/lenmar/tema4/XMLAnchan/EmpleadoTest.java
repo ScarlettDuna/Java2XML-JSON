@@ -45,6 +45,7 @@ public class EmpleadoTest {
             Document document = documentBuilder.newDocument();
             // insertar en el XML los datos del empleado
             Element elemEmpleado = document.createElement("empleado");
+            document.appendChild(elemEmpleado);
             Element elemNumEmpleado = document.createElement("numEmpleado");
             Text textNumEmpleado = document.createTextNode(emplIn.getNumEmpleado());
             elemEmpleado.appendChild(elemNumEmpleado);
@@ -53,22 +54,22 @@ public class EmpleadoTest {
             Element elemNombre = document.createElement("nombre");
             Text textNombre = document.createTextNode(emplIn.getNombre());
             elemEmpleado.appendChild(elemNombre);
-            elemNumEmpleado.appendChild(textNombre);
+            elemEmpleado.appendChild(textNombre);
 
             Element elemApellido = document.createElement("apellido");
             Text textApellido = document.createTextNode(emplIn.getApellido());
             elemEmpleado.appendChild(elemApellido);
-            elemNumEmpleado.appendChild(textApellido);
+            elemApellido.appendChild(textApellido);
 
             Element elemEmail = document.createElement("email");
             Text textEmail = document.createTextNode(emplIn.getEmail());
             elemEmpleado.appendChild(elemEmail);
-            elemNumEmpleado.appendChild(textEmail);
+            elemEmail.appendChild(textEmail);
 
             Element elemDepartamento = document.createElement("departamento");
             Text textDepartamento = document.createTextNode(emplIn.getDepartamento());
             elemEmpleado.appendChild(elemDepartamento);
-            elemNumEmpleado.appendChild(textDepartamento);
+            elemDepartamento.appendChild(textDepartamento);
             // imprimir el documento
             Source source = new DOMSource(document);
             Result result = new StreamResult(new java.io.File("Empleado2.xml"));

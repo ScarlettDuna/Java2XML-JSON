@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<empleado>
+    <numEmpleado>12345</numEmpleado>
+    <nombre>Ada</nombre>
+    <apellido>Lovelace</apellido>
+    <email>ada@network.com</email>
+    <departamento>Sistemas</departamento>
+</empleado>
