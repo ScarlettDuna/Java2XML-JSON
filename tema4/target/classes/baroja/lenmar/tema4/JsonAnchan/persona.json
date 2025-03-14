@@ -1,0 +1,22 @@
+[
+  {
+    "nombre": "Anchan",
+    "apellido": "Thai",
+    "edad": 33,
+    "aficiones": [
+      "aprender idiomas",
+      "correr",
+      "escuchar música"
+    ]
+  },
+  {
+    "nombre": "Maria",
+    "apellido": "Martínez",
+    "edad": 20,
+    "aficiones": [
+      "libros",
+      "WWE",
+      "música"
+    ]
+  }
+]
