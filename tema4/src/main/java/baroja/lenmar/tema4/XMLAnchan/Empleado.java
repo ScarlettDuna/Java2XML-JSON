@@ -1,13 +1,13 @@
 package baroja.lenmar.tema4.XMLAnchan;
 
 public class Empleado {
-    private int numEmpleado;
+    private String numEmpleado;
     private String nombre;
     private String apellido;
     private String email;
     private String departamento;
 
-    public Empleado(String apellido, String departamento, String email, String nombre, int numEmpleado) {
+    public Empleado(String apellido, String departamento, String email, String nombre, String numEmpleado) {
         this.apellido = apellido;
         this.departamento = departamento;
         this.email = email;
@@ -15,11 +15,11 @@ public class Empleado {
         this.numEmpleado = numEmpleado;
     }
 
-    public int getNumEmpleado() {
+    public String getNumEmpleado() {
         return numEmpleado;
     }
 
-    public void setNumEmpleado(int numEmpleado) {
+    public void setNumEmpleado(String numEmpleado) {
         this.numEmpleado = numEmpleado;
     }
 
