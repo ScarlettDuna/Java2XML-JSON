@@ -54,7 +54,7 @@ public class EmpleadoTest {
             Element elemNombre = document.createElement("nombre");
             Text textNombre = document.createTextNode(emplIn.getNombre());
             elemEmpleado.appendChild(elemNombre);
-            elemEmpleado.appendChild(textNombre);
+            elemNombre.appendChild(textNombre);
 
             Element elemApellido = document.createElement("apellido");
             Text textApellido = document.createTextNode(emplIn.getApellido());
