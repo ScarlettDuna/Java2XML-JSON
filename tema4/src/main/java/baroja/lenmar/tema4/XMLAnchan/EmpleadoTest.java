@@ -32,6 +32,12 @@ public class EmpleadoTest {
             Empleado empleado1 = gson.fromJson(reader, Empleado.class);
             System.out.println("Empleado " + empleado1);
             fromEmpleadoToXML(empleado1);
+
+            // Imprimir por pantalla
+            // imprimirXMLPorPantalla(doc);
+
+            // Imprimir a fichero
+            // imprimirXMLFichero(docEmpleado, RUTA_FICH + "ficheroSalida.xml")
         } catch (IOException | TransformerFactoryConfigurationError | TransformerException e) {
             e.printStackTrace();
         }
