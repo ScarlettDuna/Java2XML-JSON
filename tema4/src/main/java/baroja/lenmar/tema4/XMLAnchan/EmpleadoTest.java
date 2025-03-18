@@ -24,8 +24,9 @@ import org.w3c.dom.Text;
 import com.google.gson.Gson;
 
 public class EmpleadoTest {
+    final static String RUTA_FICH = "C:\\Users\\Usuario_Mañana\\Documents\\Lenguaje de marcas\\Java\\tema4\\src\\main\\java\\baroja\\lenmar\\tema4\\XMLAnchan\\";
     public static void main(String[] args) {
-        final String RUTA_FICH = "C:\\Users\\Usuario_Mañana\\Documents\\Lenguaje de marcas\\Java\\tema4\\src\\main\\java\\baroja\\lenmar\\tema4\\XMLAnchan\\";
+        
         Gson gson = new Gson();
         try {
             Reader reader = Files.newBufferedReader(Paths.get(RUTA_FICH + "empleado.json"));
@@ -78,7 +79,7 @@ public class EmpleadoTest {
             elemDepartamento.appendChild(textDepartamento);
             // imprimir el documento
             Source source = new DOMSource(document);
-            Result result = new StreamResult(new java.io.File("Empleado2.xml"));
+            Result result = new StreamResult(new java.io.File(RUTA_FICH+"Empleado2.xml"));
 
             Transformer transformer = TransformerFactory.newInstance().newTransformer();
             transformer.transform(source, result);
