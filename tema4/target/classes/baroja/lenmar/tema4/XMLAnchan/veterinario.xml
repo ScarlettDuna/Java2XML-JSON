@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<veterinario>
+    <mascota>
+        <nombre></nombre>
+        <raza></raza>
+        <edad></edad>
+        <dueno></dueno>
+        <vacuna></vacuna>
+    </mascota>
+    <mascota>
+        <nombre></nombre>
+        <raza></raza>
+        <edad></edad>
+        <dueno></dueno>
+        <vacuna></vacuna>
+    </mascota>
+
+</veterinario>
