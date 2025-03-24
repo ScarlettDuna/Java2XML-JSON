@@ -1,9 +1,10 @@
 package baroja.lenmar.tema4.XMLAnchan;
-import javax.xml.bind.Unmarshaller;
+import java.io.File;
+
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
-
-import java.io.File;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
 
 public class SocioTest {
     public static void main(String[] args) {
@@ -16,6 +17,15 @@ public class SocioTest {
             // leenos el xml, obtenemos sus elementos y lo pasamos a objeto socio
             Socio socioEntrada = (Socio) um.unmarshal(new File(RUTA_FICH+"socio.xml"));
             System.out.println("XML leido: " + socioEntrada);
+
+            // Para generar el XML de salida, el proceso es el contrario - Marshall
+            // Generamos el objeto Marshaller para escribir
+
+            Marshaller jaxbMarshaller = contexto.createMarshaller();
+            jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+            // Escribimos es XML
+            jaxbMarshaller.marshal(socioEntrada, new File(RUTA_FICH+"socioOUT.xml"));
+            System.out.println("XML generado correctamente.");
         } catch (JAXBException e) {
             e.printStackTrace();
         }

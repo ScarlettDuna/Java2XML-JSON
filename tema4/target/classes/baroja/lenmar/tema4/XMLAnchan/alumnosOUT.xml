@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alumnos>
+    <alumno>
+        <id>1</id>
+        <nombre>Ana</nombre>
+        <apellido>García</apellido>
+        <notaMedia>7.8</notaMedia>
+    </alumno>
+    <alumno>
+        <id>2</id>
+        <nombre>Ada</nombre>
+        <apellido>Lovalace</apellido>
+        <notaMedia>9.8</notaMedia>
+    </alumno>
+    <alumno>
+        <id>3</id>
+        <nombre>Alan</nombre>
+        <apellido>Tourin</apellido>
+        <notaMedia>8.8</notaMedia>
+    </alumno>
+</alumnos>
