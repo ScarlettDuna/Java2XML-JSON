@@ -13,11 +13,12 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 public class Alumnos {
     @XmlElement(name="alumno")
-
+    // Atributo
     private List<Alumno> Alumnos = null;
 
+    // Constructor
     public Alumnos(){}
-
+    // Getter
     public List<Alumno> getAlumnos() {
         return Alumnos;
     }

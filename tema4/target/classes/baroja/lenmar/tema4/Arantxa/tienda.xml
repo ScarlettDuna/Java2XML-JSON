@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tienda>
+    <producto>
+        <nombre>Boligrafo rojo</nombre>
+        <precio>1.5</precio>
+        <stock>200</stock>
+        <proveedor>BIC</proveedor>
+    </producto>
+    <producto>
+        <nombre>Cuaderno cuadricula</nombre>
+        <precio>2</precio>
+        <stock>75</stock>
+        <proveedor>INRI</proveedor>
+    </producto>
+    <producto>
+        <nombre>Estuche</nombre>
+        <precio>3.5</precio>
+        <stock>20</stock>
+        <proveedor>ChinaWorld</proveedor>
+    </producto>
+    <producto>
+        <nombre>Regla 20cm</nombre>
+        <precio>2.25</precio>
+        <stock>15</stock>
+        <proveedor>ChinaWorld</proveedor>
+    </producto>
+</tienda>

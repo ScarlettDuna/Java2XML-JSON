@@ -42,6 +42,7 @@ public class AlumnoTest {
             marshaller.marshal(alumnosClase, new File(RUTA_FICH+"alumnosOUT.xml"));
             System.out.println("XML de salida generado correctamente.");
         } catch (JAXBException e) {
+            e.printStackTrace();
         }
     }
 }
